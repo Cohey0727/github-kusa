@@ -3,7 +3,7 @@ const { exec } = require("child_process");
 const main = async () => {
   let index = 0;
   // 2017年1月1日
-  const baseDate = -36000000;
+  const baseDate = 946652400;
   for (const a of [...Array(183).keys()]) {
     await exec2(`echo ${index} > index.txt`);
     await exec2("git add .");
